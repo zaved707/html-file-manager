@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}"> -->
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      
+        <div class="input_area">
+          <span id="current_dir">Initial Text</span>
+          <input type="text" name="display" value="value">
+        </div>
+        <div id="button_container"></div>
+        <div>
+          <input id="my_button" type="button" value="TEST" onclick="initialize();">
+          <input type="button" value="back" onclick="goBack();">
+      
+    </div>
+  </div>
+</head>
+  <script src="{{ url_for('static', filename='scripts/index.js') }}" ></script>
+</body>
+</html> 
